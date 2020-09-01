@@ -27,7 +27,7 @@ class AddGdgFragment : Fragment() {
 
         binding.viewModel = viewModel
 
-        viewModel.showSnackBarEvent.observe(this, Observer {
+        viewModel.showSnackBarEvent.observe(viewLifecycleOwner, Observer {
             if (it == true) { // Observed state is true.
                 Snackbar.make(
                     activity!!.findViewById(android.R.id.content),
