@@ -28,7 +28,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="@dimen/spacing_normal"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="@dimen/spacing_normal"/>
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:contentDescription="@string/add_gdg"/>
 
             <ImageView
                     android:id="@+id/imageView"
@@ -42,7 +43,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextName"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/stage_image_description"/>
 
             <EditText
                     android:id="@+id/EditTextName"
@@ -56,7 +58,8 @@
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextEmail"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:contentDescription="@string/your_name_label"/>
 
             <EditText
                     android:id="@+id/EditTextEmail"
@@ -70,7 +73,8 @@
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextCity"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:contentDescription="@string/email_label"/>
             <EditText
                     android:id="@+id/EditTextCity"
                     android:layout_height="wrap_content"
@@ -83,7 +87,8 @@
                     android:layout_marginEnd="32dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextCountry"
                     android:layout_marginBottom="4dp"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:contentDescription="@string/city_label"/>
             <EditText
                     android:id="@+id/EditTextCountry"
                     android:layout_height="wrap_content"
@@ -96,7 +101,8 @@
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextRegion"
                     android:layout_marginTop="4dp"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:contentDescription="@string/country_label"/>
             <EditText
                     android:id="@+id/EditTextRegion"
                     android:layout_height="wrap_content"
@@ -109,7 +115,8 @@
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextWhy"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:contentDescription="@string/region_label"/>
 
             <!--wrap in a layout to group-->
             <!--<LinearLayout -->
